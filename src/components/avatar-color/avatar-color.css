@@ -1,0 +1,99 @@
+
+    $colores: darkgreen, pink, cyan, magenta;
+
+    .imgRedonda {
+        width:80px;
+        height:80px;
+        border-radius:10px;
+        border:3px solid #3C3838;
+    }
+    
+    
+    .bar-profile {
+        background-color: #005b7c;
+        height: 170px;
+    }
+    
+    .profile {
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        padding-top: 15px;
+    }
+    
+    .profile .name {
+        color: #d5d1ca;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .profile-picture {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .backgroundfondo{
+      background-color: denta5;
+      color: #efefee;
+    }
+
+    [data-letters]:before {
+        content:attr(data-letters);
+        display:inline-block;
+        font-size:1em;
+        width:2.5em;
+        height:2.5em;
+        line-height:2.5em;
+        text-align:center;
+        border-radius:50%;
+        background:plum;
+        vertical-align:middle;
+        margin-right:1em;
+        color:white;
+        }
+    
+    .avatar_letter::before{
+        content:attr(letra);
+        display:inline-block;
+        font-size:1em;
+        width:2.5em;
+        height:2.5em;
+        line-height:2.5em;
+        text-align:center;
+        border-radius:50%;
+        background: nth($colores, random(length($colores)));
+        vertical-align:middle;
+        margin-right:1em;
+        color:black;
+    }
+
+    @mixin avatar($size) {
+        width: $size;
+        height: $size;
+       // background-color: nth($colores, random(length($colores)));
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+    
+        .initials {
+          position: relative;
+          top: $size*0.25;
+          font-size: $size*0.5;
+          line-height: $size*0.5;
+          color: #fff;
+          font-family: "Courier New", monospace;
+          font-weight: bold;
+        }
+    }
+    
+    .avatar-circle      { @include avatar(100px); }
+    .avatar-circle-sm   { @include avatar(50px); }
+    .avatar-circle-lg   { @include avatar(250px); }
