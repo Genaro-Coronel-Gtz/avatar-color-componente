@@ -13,10 +13,12 @@ import '@stencil/core';
 export namespace Components {
 
   interface AvatarColor {
+    'colores': Array<String>;
     'nombre': string;
     'size': string;
   }
   interface AvatarColorAttributes extends StencilHTMLAttributes {
+    'colores'?: Array<String>;
     'nombre'?: string;
     'size'?: string;
   }

@@ -21,6 +21,9 @@
         }
     }
     
-    .avatar-circle      { @include avatar(100px); }
-    .avatar-circle-sm   { @include avatar(50px); }
-    .avatar-circle-lg   { @include avatar(250px); }
+    .avatar-circle      { @include avatar(70px); }
+    .avatar-circle-std   { @include avatar(50px); }
+    .avatar-circle-sm   { @include avatar(40px); }
+    .avatar-circle-xsm   { @include avatar(30px); }
+    .avatar-circle-lg   { @include avatar(90px); }
+    .avatar-circle-xlg   { @include avatar(150px); }

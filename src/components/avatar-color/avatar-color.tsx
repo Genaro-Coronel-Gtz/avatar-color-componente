@@ -7,19 +7,25 @@ import { Component, Prop } from '@stencil/core'
 })
 export class AvatarColor {
 
-  @Prop()  nombre: string
-  @Prop() size: string
+  @Prop()  nombre: string;
+  @Prop() size: string;
+  @Prop() colores: Array<String>;
 
 
   render() {
-
+   
+   
     function randomBetween(min, max) {
       return Math.floor(Math.random() * (+max - +min)) + +min;
   }
 
-    var colores = ['red', 'pink', 'cyan', 'magenta'];
-    var randomIndex = randomBetween(0, colores.length - 1);
-    console.log('rando index', randomIndex );
+    const componente = document.querySelector('avatar-color');
+
+    var colores = componente.attributes['colores'].value;
+        colores = colores.split(',');
+
+    var randomIndex = randomBetween(0, colores.length);
+
     const colorText = { color:  'white' } ;
     var customClass = 'avatar-circle';
     var randomColor = {background: colores[randomIndex]};
