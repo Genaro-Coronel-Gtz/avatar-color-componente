@@ -7,10 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `nombre` | `nombre`  |             | `string` | `undefined` |
-| `size`   | `size`    |             | `string` | `undefined` |
+| Property    | Attribute    | Description | Type     | Default     |
+| ----------- | ------------ | ----------- | -------- | ----------- |
+| `nombre`    | `nombre`     |             | `string` | `undefined` |
+| `size`      | `size`       |             | `string` | `undefined` |
+| `textColor` | `text-color` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

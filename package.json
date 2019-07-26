@@ -1,6 +1,6 @@
 {
   "name": "avatar-color-coronel",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Componente para avatar rounded color",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
